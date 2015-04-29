@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EmployeeRateSystem.Models
 {
     public class EmployeeModel
     {
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string id { get; set; }
 
         [Display(Name = "First Name")]
